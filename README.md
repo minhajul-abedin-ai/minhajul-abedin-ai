@@ -1,16 +1,36 @@
-## Hi there 👋
+# Hi, I'm Minhajul Abedin 👋
 
-<!--
-**minhajul-abedin-ai/minhajul-abedin-ai** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🎓 MSc Computer Science and Technology — Ulster University, London
+🤖 Aspiring AI Engineer
+📍 London, United Kingdom
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🎯 Career Focus
+
+* AI Engineering
+* Machine Learning
+* Natural Language Processing (NLP)
+
+---
+
+## 🔧 Skills
+
+* Python (Pandas, NumPy)
+* Machine Learning (Scikit-learn)
+* Deep Learning (TensorFlow, Keras)
+* Data Analysis & Visualization
+
+---
+
+## 🚀 Projects
+
+* 📊 Bitcoin Volatility Prediction using ML + SHAP + RAG
+* 💰 Crypto Price Dashboard (Flask + Python)
+
+---
+
+## 📫 Contact
+
+* Email: minhajulabedin9050@gmail.com
+
