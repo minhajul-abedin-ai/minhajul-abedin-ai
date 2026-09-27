@@ -1,36 +1,64 @@
 # Hi, I'm Minhajul Abedin 👋
 
-🎓 MSc Computer Science and Technology — Ulster University, London
-🤖 Aspiring AI Engineer
+### AI / Machine Learning Engineer | MSc Computer Science & Technology
 📍 London, United Kingdom
 
----
+I build machine-learning systems that combine predictive modelling,
+explainable AI and practical software applications.
 
-## 🎯 Career Focus
+## 🧠 Areas of Interest
+- Artificial Intelligence
+- Machine Learning
+- Explainable AI (XAI)
+- Natural Language Processing
+- Generative AI & RAG
+- Data Science
 
-* AI Engineering
-* Machine Learning
-* Natural Language Processing (NLP)
+## 🛠 Tech Stack
 
----
+**Languages:** Python, SQL
 
-## 🔧 Skills
+**Machine Learning:** Scikit-learn, XGBoost, Random Forest,
+Gradient Boosting, SVM
 
-* Python (Pandas, NumPy)
-* Machine Learning (Scikit-learn)
-* Deep Learning (TensorFlow, Keras)
-* Data Analysis & Visualization
+**Deep Learning:** TensorFlow, Keras
 
----
+**AI / NLP:** SHAP, RAG, TF-IDF, TextBlob
 
-## 🚀 Projects
+**Data:** Pandas, NumPy, Matplotlib
 
-* 📊 Bitcoin Volatility Prediction using ML + SHAP + RAG
-* 💰 Crypto Price Dashboard (Flask + Python)
+**Development:** Flask, Git, GitHub
 
----
+## 🚀 Featured Projects
+
+### ₿ Bitcoin Volatility Prediction with XAI & RAG
+Machine-learning framework combining Bitcoin price data,
+news sentiment and social-media sentiment.
+
+- Random Forest, XGBoost, Gradient Boosting, SVR, LSTM and MLP
+- SHAP explainability
+- Retrieval-Augmented Generation for volatility-event explanations
+- Time-series feature engineering
+- Sentiment analysis
+
+### 👥 Explainable Employee Attrition Prediction
+Explainable AI framework for predicting employee attrition
+and identifying important HR risk factors.
+
+- 7 machine-learning algorithms
+- SHAP explainability
+- SMOTE
+- Feature selection
+- Multiple HR datasets
+
+### ❤️ Cardiovascular Disease Prediction
+Machine-learning project for cardiovascular risk prediction.
+
+### 🤖 Q-Learning Grid World
+Reinforcement-learning implementation demonstrating an autonomous
+agent learning an optimal navigation policy.
 
 ## 📫 Contact
 
-* Email: minhajulabedin9050@gmail.com
-
+📧 minhajulabedin9050@gmail.com
+📍 London, United Kingdom
