@@ -1,64 +1,79 @@
-# Hi, I'm Minhajul Abedin 👋
+# Minhajul Abedin
 
-### AI / Machine Learning Engineer | MSc Computer Science & Technology
+### AI / Machine Learning Engineer | Python • XAI • RAG • Applied ML
 📍 London, United Kingdom
 
-I build machine-learning systems that combine predictive modelling,
-explainable AI and practical software applications.
+I build practical AI and machine-learning systems with a focus on **reliable modelling, explainability, reproducibility and deployment-minded engineering**.
 
-## 🧠 Areas of Interest
-- Artificial Intelligence
-- Machine Learning
-- Explainable AI (XAI)
-- Natural Language Processing
-- Generative AI & RAG
-- Data Science
+My work spans classical ML, explainable AI, reinforcement learning, semantic AI and cloud-backed applications. I am especially interested in turning ML/AI prototypes into systems that are understandable, testable and useful in real applications.
 
-## 🛠 Tech Stack
+## Core Engineering Stack
 
-**Languages:** Python, SQL
+**Languages:** Python, SQL  
+**Machine Learning:** Scikit-learn, XGBoost, Random Forest, Gradient Boosting, SVM  
+**Deep Learning:** TensorFlow, Keras  
+**AI / XAI / NLP:** SHAP, RAG, TF-IDF, sentiment analysis  
+**Data:** Pandas, NumPy, Matplotlib  
+**Application & Deployment:** Flask, Docker, Microsoft Azure, Git, GitHub  
 
-**Machine Learning:** Scikit-learn, XGBoost, Random Forest,
-Gradient Boosting, SVM
+## Selected AI / ML Projects
 
-**Deep Learning:** TensorFlow, Keras
+### 👥 [Explainable Employee Attrition Prediction](https://github.com/minhajul-abedin-ai/HR-Employee-Attrition)
+End-to-end XAI framework for predicting employee attrition and explaining individual and global risk factors.
 
-**AI / NLP:** SHAP, RAG, TF-IDF, TextBlob
-
-**Data:** Pandas, NumPy, Matplotlib
-
-**Development:** Flask, Git, GitHub
-
-## 🚀 Featured Projects
-
-### ₿ Bitcoin Volatility Prediction with XAI & RAG
-Machine-learning framework combining Bitcoin price data,
-news sentiment and social-media sentiment.
-
-- Random Forest, XGBoost, Gradient Boosting, SVR, LSTM and MLP
+- Multi-dataset machine-learning evaluation
+- Leakage-aware preprocessing and class-imbalance handling
 - SHAP explainability
-- Retrieval-Augmented Generation for volatility-event explanations
-- Time-series feature engineering
-- Sentiment analysis
+- Flask-based prediction dashboard
+- Reproducible model pipeline
 
-### 👥 Explainable Employee Attrition Prediction
-Explainable AI framework for predicting employee attrition
-and identifying important HR risk factors.
+### ❤️ [Cardiovascular Disease Prediction](https://github.com/minhajul-abedin-ai/Cardiovascular-Disease-Prediction)
+Responsible ML project focused on reproducibility, evaluation and data integrity.
 
-- 7 machine-learning algorithms
-- SHAP explainability
-- SMOTE
-- Feature selection
-- Multiple HR datasets
+- Logistic Regression and tuned Random Forest
+- Leakage-aware preprocessing pipelines
+- ROC-AUC / PR-AUC evaluation
+- Group-wise descriptive fairness metrics
+- Tests, documentation and reproducible project structure
 
-### ❤️ Cardiovascular Disease Prediction
-Machine-learning project for cardiovascular risk prediction.
+### 🤖 [Reinforcement Learning Pathfinding](https://github.com/minhajul-abedin-ai/q-learning-gridworld-pathfinding)
+Reproducible Q-learning implementation demonstrating autonomous policy learning.
 
-### 🤖 Q-Learning Grid World
-Reinforcement-learning implementation demonstrating an autonomous
-agent learning an optimal navigation policy.
+- Q-learning and temporal-difference updates
+- Epsilon-greedy exploration
+- Hyperparameter experiments
+- Convergence analysis and visualisation
+- Object-oriented Python implementation
 
-## 📫 Contact
+### 🌱 [Botanical Knowledge Ontology](https://github.com/minhajul-abedin-ai/Botanical-Knowledge-Ontology)
+Knowledge-engineering project combining semantic modelling with AI concepts.
 
-📧 minhajulabedin9050@gmail.com
-📍 London, United Kingdom
+- OWL / RDF ontology design
+- SPARQL querying
+- Semantic reasoning
+- Protégé-compatible artefacts
+- Neuro-symbolic AI concepts
+
+### ☁️ [StratosPic](https://github.com/minhajul-abedin-ai/StratosPic)
+Cloud-oriented photo-sharing application exploring deployment and scalable system design.
+
+- Python / Flask REST API
+- PostgreSQL
+- Docker
+- Microsoft Azure architecture
+- Cloud deployment and service-isolation concepts
+
+## What I Am Building Toward
+
+I am focused on **AI Engineer / Machine Learning Engineer** roles where I can work across:
+
+- end-to-end ML development;
+- explainable and responsible AI;
+- LLM / RAG-based applications;
+- model deployment and API integration;
+- cloud/containerised AI systems;
+- production-minded testing, monitoring and reliability.
+
+## Connect
+
+[LinkedIn](https://www.linkedin.com/in/minhajulabedinai) · London, United Kingdom
