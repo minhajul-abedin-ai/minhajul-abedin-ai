@@ -1,79 +1,34 @@
 # Minhajul Abedin
 
-### AI / Machine Learning Engineer | Python • XAI • RAG • Applied ML
-📍 London, United Kingdom
+**AI / Machine Learning Engineering · Multi-Agent AI · RAG · Explainable ML**
 
-I build practical AI and machine-learning systems with a focus on **reliable modelling, explainability, reproducibility and deployment-minded engineering**.
+📍 London, United Kingdom · [LinkedIn](https://www.linkedin.com/in/minhajulabedinai)
 
-My work spans classical ML, explainable AI, reinforcement learning, semantic AI and cloud-backed applications. I am especially interested in turning ML/AI prototypes into systems that are understandable, testable and useful in real applications.
+I build practical, inspectable AI systems—from machine-learning experiments to APIs and developer tools. My priorities are **reproducibility, meaningful evaluation, secure defaults, and clear documentation**.
 
-## Core Engineering Stack
+## 🚀 Featured projects
 
-**Languages:** Python, SQL  
-**Machine Learning:** Scikit-learn, XGBoost, Random Forest, Gradient Boosting, SVM  
-**Deep Learning:** TensorFlow, Keras  
-**AI / XAI / NLP:** SHAP, RAG, TF-IDF, sentiment analysis  
-**Data:** Pandas, NumPy, Matplotlib  
-**Application & Deployment:** Flask, Docker, Microsoft Azure, Git, GitHub  
+| Project | What it demonstrates | Start here |
+| --- | --- | --- |
+| 🌳 **[ConsensusTree-AI](https://github.com/minhajul-abedin-ai/ConsensusTree-AI)** | Experimental local-first multi-agent council for code review and technical decisions; Python CLI, SDK and local browser Studio | [Offline quickstart](https://github.com/minhajul-abedin-ai/ConsensusTree-AI#try-the-offline-demo) |
+| 🔎 **[Production RAG Evaluation Platform](https://github.com/minhajul-abedin-ai/Production-Rag-Evaluation-Platform)** | TF-IDF retrieval baseline, grounded extractive answers, evaluation metrics, FastAPI and Docker | [Quickstart](https://github.com/minhajul-abedin-ai/Production-Rag-Evaluation-Platform#quick-start) |
+| 🫀 **[Cardiovascular Disease Prediction](https://github.com/minhajul-abedin-ai/Cardiovascular-Disease-Prediction)** | Reproducible educational ML, leakage-aware pipelines and responsible evaluation | [Reproduce](https://github.com/minhajul-abedin-ai/Cardiovascular-Disease-Prediction#quick-start) |
+| 🌱 **[Botanical Knowledge Ontology](https://github.com/minhajul-abedin-ai/Botanical-Knowledge-Ontology)** | OWL/RDF, SPARQL, ontology validation and documented source traceability | [Queries](https://github.com/minhajul-abedin-ai/Botanical-Knowledge-Ontology#competency-query-examples) |
+| 🤖 **[Q-Learning Gridworld](https://github.com/minhajul-abedin-ai/q-learning-gridworld-pathfinding)** | Reproducible tabular reinforcement learning and policy visualisations | [Installation](https://github.com/minhajul-abedin-ai/q-learning-gridworld-pathfinding#installation) |
+| ☁️ **[StratosPic](https://github.com/minhajul-abedin-ai/StratosPic)** | Flask application engineering, authentication, PostgreSQL, optional Azure storage and CI | [Run locally](https://github.com/minhajul-abedin-ai/StratosPic#local-setup) |
 
-## Selected AI / ML Projects
+**Also exploring:** [RiftReign Android space shooter](https://github.com/minhajul-abedin-ai/RiftReign-Space-Shooter) · [Explainable employee attrition research](https://github.com/minhajul-abedin-ai/HR-Employee-Attrition) · [All public repositories](https://github.com/minhajul-abedin-ai?tab=repositories)
 
-### 👥 [Explainable Employee Attrition Prediction](https://github.com/minhajul-abedin-ai/HR-Employee-Attrition)
-End-to-end XAI framework for predicting employee attrition and explaining individual and global risk factors.
+> **Project transparency:** ConsensusTree-AI is an experimental prerelease: its sample output is fictional, and independent quality evaluation, live-provider validation and external security review are outstanding. Educational prediction projects are not clinical or employment decision systems.
 
-- Multi-dataset machine-learning evaluation
-- Leakage-aware preprocessing and class-imbalance handling
-- SHAP explainability
-- Flask-based prediction dashboard
-- Reproducible model pipeline
+## 🧰 Technical toolkit
 
-### ❤️ [Cardiovascular Disease Prediction](https://github.com/minhajul-abedin-ai/Cardiovascular-Disease-Prediction)
-Responsible ML project focused on reproducibility, evaluation and data integrity.
+**Python & data:** Python, SQL, Pandas, NumPy, scikit-learn, XGBoost  
+**Applied AI:** multi-agent workflows, RAG evaluation, SHAP, reinforcement learning, OWL/RDF and SPARQL  
+**Engineering:** FastAPI, Flask, Docker, GitHub Actions, automated tests, Azure and PostgreSQL
 
-- Logistic Regression and tuned Random Forest
-- Leakage-aware preprocessing pipelines
-- ROC-AUC / PR-AUC evaluation
-- Group-wise descriptive fairness metrics
-- Tests, documentation and reproducible project structure
+## 🤝 Collaborate or contribute
 
-### 🤖 [Reinforcement Learning Pathfinding](https://github.com/minhajul-abedin-ai/q-learning-gridworld-pathfinding)
-Reproducible Q-learning implementation demonstrating autonomous policy learning.
+Explore a project's README and quickstart, then open a [ConsensusTree-AI issue](https://github.com/minhajul-abedin-ai/ConsensusTree-AI/issues) or an issue in the relevant repository with a reproducible bug report, research question or documentation improvement. Contributions are welcomed subject to each repository's licence and guidelines.
 
-- Q-learning and temporal-difference updates
-- Epsilon-greedy exploration
-- Hyperparameter experiments
-- Convergence analysis and visualisation
-- Object-oriented Python implementation
-
-### 🌱 [Botanical Knowledge Ontology](https://github.com/minhajul-abedin-ai/Botanical-Knowledge-Ontology)
-Knowledge-engineering project combining semantic modelling with AI concepts.
-
-- OWL / RDF ontology design
-- SPARQL querying
-- Semantic reasoning
-- Protégé-compatible artefacts
-- Neuro-symbolic AI concepts
-
-### ☁️ [StratosPic](https://github.com/minhajul-abedin-ai/StratosPic)
-Cloud-oriented photo-sharing application exploring deployment and scalable system design.
-
-- Python / Flask REST API
-- PostgreSQL
-- Docker
-- Microsoft Azure architecture
-- Cloud deployment and service-isolation concepts
-
-## What I Am Building Toward
-
-I am focused on **AI Engineer / Machine Learning Engineer** roles where I can work across:
-
-- end-to-end ML development;
-- explainable and responsible AI;
-- LLM / RAG-based applications;
-- model deployment and API integration;
-- cloud/containerised AI systems;
-- production-minded testing, monitoring and reliability.
-
-## Connect
-
-[LinkedIn](https://www.linkedin.com/in/minhajulabedinai) · London, United Kingdom
+**Find me:** [LinkedIn](https://www.linkedin.com/in/minhajulabedinai) · [GitHub repositories](https://github.com/minhajul-abedin-ai?tab=repositories)
