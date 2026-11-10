@@ -36,10 +36,52 @@ jobs:
       - name: Check website JavaScript syntax
         run: node --check site/app.mjs
 
-  deploy:
-    name: Deploy portfolio to GitHub Pages
+  pages_check:
+    name: Check GitHub Pages configuration
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      ready: ${{ steps.detect.outputs.ready }}
+    steps:
+      - name: Check whether GitHub Pages is enabled for Actions
+        id: detect
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          page_json="$(mktemp)"
+          code="$(curl --silent --show-error --location --output "$page_json" --write-out '%{http_code}' \
+            --header 'Accept: application/vnd.github+json' \
+            --header "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/pages")"
+          if [ "$code" = '404' ]; then
+            echo 'ready=false' >> "$GITHUB_OUTPUT"
+            echo '### GitHub Pages setup required' >> "$GITHUB_STEP_SUMMARY"
+            echo "Open https://github.com/${GITHUB_REPOSITORY}/settings/pages and select **Build and deployment → Source → GitHub Actions**. Then run this workflow again." >> "$GITHUB_STEP_SUMMARY"
+            echo '::notice title=GitHub Pages disabled::Enable GitHub Pages in Settings → Pages and select GitHub Actions.'
+          elif [ "$code" = '200' ]; then
+            mode="$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1])).get("build_type", ""))' "$page_json")"
+            if [ "$mode" = 'workflow' ]; then
+              echo 'ready=true' >> "$GITHUB_OUTPUT"
+            else
+              echo 'ready=false' >> "$GITHUB_OUTPUT"
+              echo '### GitHub Pages source is not GitHub Actions' >> "$GITHUB_STEP_SUMMARY"
+              echo "Open https://github.com/${GITHUB_REPOSITORY}/settings/pages and select **Build and deployment → Source → GitHub Actions**, then rerun." >> "$GITHUB_STEP_SUMMARY"
+              echo '::notice title=Set Pages source to Actions::Pages is enabled, but GitHub Actions is not the selected build source.'
+            fi
+          else
+            echo "::error::Failed to check Pages configuration (HTTP $code)"
+            exit 1
+          fi
+
+  deploy:
+    name: Deploy portfolio to GitHub Pages
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && needs.pages_check.outputs.ready == 'true'
+    needs: [test, pages_check]
     runs-on: ubuntu-latest
     permissions:
       contents: read
