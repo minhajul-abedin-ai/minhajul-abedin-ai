@@ -11,7 +11,7 @@ I build practical, inspectable AI systems—from machine-learning experiments to
 | Project | What it demonstrates | Start here |
 | --- | --- | --- |
 | 🌳 **[ConsensusTree-AI](https://github.com/minhajul-abedin-ai/ConsensusTree-AI)** | Experimental local-first multi-agent council for code review and technical decisions; Python CLI, SDK and local browser Studio | [Offline quickstart](https://github.com/minhajul-abedin-ai/ConsensusTree-AI#try-the-offline-demo) |
-| 🔎 **[Production RAG Evaluation Platform](https://github.com/minhajul-abedin-ai/Production-Rag-Evaluation-Platform)** | TF-IDF retrieval baseline, grounded extractive answers, evaluation metrics, FastAPI and Docker | [Quickstart](https://github.com/minhajul-abedin-ai/Production-Rag-Evaluation-Platform#quick-start) |
+| 🔎 **[Production RAG Evaluation Platform](https://github.com/minhajul-abedin-ai/Production-Rag-Evaluation-Platform)** | Authenticated tenant-scoped RAG baseline with optional SQLite storage, ingestion limits, evaluation, FastAPI and Docker | [Quickstart](https://github.com/minhajul-abedin-ai/Production-Rag-Evaluation-Platform#quick-start) |
 | 🫀 **[Cardiovascular Disease Prediction](https://github.com/minhajul-abedin-ai/Cardiovascular-Disease-Prediction)** | Reproducible educational ML, leakage-aware pipelines and responsible evaluation | [Reproduce](https://github.com/minhajul-abedin-ai/Cardiovascular-Disease-Prediction#quick-start) |
 | 🌱 **[Botanical Knowledge Ontology](https://github.com/minhajul-abedin-ai/Botanical-Knowledge-Ontology)** | OWL/RDF, SPARQL, ontology validation and documented source traceability | [Queries](https://github.com/minhajul-abedin-ai/Botanical-Knowledge-Ontology#competency-query-examples) |
 | 🤖 **[Q-Learning Gridworld](https://github.com/minhajul-abedin-ai/q-learning-gridworld-pathfinding)** | Reproducible tabular reinforcement learning and policy visualisations | [Installation](https://github.com/minhajul-abedin-ai/q-learning-gridworld-pathfinding#installation) |
@@ -20,6 +20,22 @@ I build practical, inspectable AI systems—from machine-learning experiments to
 **Also exploring:** [RiftReign Android space shooter](https://github.com/minhajul-abedin-ai/RiftReign-Space-Shooter) · [Explainable employee attrition research](https://github.com/minhajul-abedin-ai/HR-Employee-Attrition) · [All public repositories](https://github.com/minhajul-abedin-ai?tab=repositories)
 
 > **Project transparency:** ConsensusTree-AI is an experimental prerelease: its sample output is fictional, and independent quality evaluation, live-provider validation and external security review are outstanding. Educational prediction projects are not clinical or employment decision systems.
+
+## ✅ Build and reproducibility evidence
+
+These linked badges reflect **automated GitHub Actions results** on each repository's default branch. A green badge confirms the configured CI checks ran; it does **not** certify deployment safety, independent research quality or live integration with external APIs.
+
+| Project | Automated checks |
+| --- | --- |
+| [ConsensusTree-AI](https://github.com/minhajul-abedin-ai/ConsensusTree-AI) | [![Python tests](https://github.com/minhajul-abedin-ai/ConsensusTree-AI/actions/workflows/tests.yml/badge.svg)](https://github.com/minhajul-abedin-ai/ConsensusTree-AI/actions/workflows/tests.yml) |
+| [Production RAG](https://github.com/minhajul-abedin-ai/Production-Rag-Evaluation-Platform) | [![RAG CI](https://github.com/minhajul-abedin-ai/Production-Rag-Evaluation-Platform/actions/workflows/ci.yml/badge.svg)](https://github.com/minhajul-abedin-ai/Production-Rag-Evaluation-Platform/actions/workflows/ci.yml) |
+| [StratosPic](https://github.com/minhajul-abedin-ai/StratosPic) | [![StratosPic CI](https://github.com/minhajul-abedin-ai/StratosPic/actions/workflows/ci.yml/badge.svg)](https://github.com/minhajul-abedin-ai/StratosPic/actions/workflows/ci.yml) |
+| [Cardiovascular ML](https://github.com/minhajul-abedin-ai/Cardiovascular-Disease-Prediction) | [![ML tests](https://github.com/minhajul-abedin-ai/Cardiovascular-Disease-Prediction/actions/workflows/tests.yml/badge.svg)](https://github.com/minhajul-abedin-ai/Cardiovascular-Disease-Prediction/actions/workflows/tests.yml) |
+| [Q-Learning](https://github.com/minhajul-abedin-ai/q-learning-gridworld-pathfinding) | [![RL tests](https://github.com/minhajul-abedin-ai/q-learning-gridworld-pathfinding/actions/workflows/tests.yml/badge.svg)](https://github.com/minhajul-abedin-ai/q-learning-gridworld-pathfinding/actions/workflows/tests.yml) |
+| [Botanical Ontology](https://github.com/minhajul-abedin-ai/Botanical-Knowledge-Ontology) | [![Ontology tests](https://github.com/minhajul-abedin-ai/Botanical-Knowledge-Ontology/actions/workflows/tests.yml/badge.svg)](https://github.com/minhajul-abedin-ai/Botanical-Knowledge-Ontology/actions/workflows/tests.yml) |
+| [RiftReign Android](https://github.com/minhajul-abedin-ai/RiftReign-Space-Shooter) | [![Android build](https://github.com/minhajul-abedin-ai/RiftReign-Space-Shooter/actions/workflows/android-build.yml/badge.svg)](https://github.com/minhajul-abedin-ai/RiftReign-Space-Shooter/actions/workflows/android-build.yml) |
+
+**Scope notes:** RAG currently uses a transparent TF-IDF/extractive baseline and a single-process demo security model, not a managed production service. RiftReign's build badge confirms compilation, not full device QA or Google Play release. ConsensusTree-AI's [independent validation checklist](https://github.com/minhajul-abedin-ai/ConsensusTree-AI/issues/1) remains open.
 
 ## 🧰 Technical toolkit
 
