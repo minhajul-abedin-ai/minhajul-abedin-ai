@@ -24,12 +24,13 @@ My work connects machine learning with software engineering: from training and e
 
 ## Interactive portfolio website — a guided tour of my GitHub
 
-I have built a separate **responsive portfolio website** for recruiters, developers and research collaborators. Visitors can follow my journey, see curated AI engineering case studies, and **search or filter every public project repository** from one place.
+A **responsive portfolio website** for recruiters, developers and research collaborators. Explore my background, curated AI engineering case studies, and a searchable, filterable directory of my **public GitHub projects**.
 
-- **[Explore the portfolio website](https://minhajul-abedin-ai.github.io/minhajul-abedin-ai/)** — this link becomes live once GitHub Pages is activated for this repository.
-- [View the website source](site/index.html) · [GitHub Pages setup instructions](PORTFOLIO_README.md)
+**[Explore the website source](site/index.html)** · **[Run a local preview](PORTFOLIO_README.md)** · [All public repositories](https://github.com/minhajul-abedin-ai?tab=repositories)
 
-The website intentionally exposes **public repositories only**. Private repositories are not included.
+**Publishing status:** GitHub Pages has not yet been enabled for this profile repository. To make the website publicly accessible, visit [Settings → Pages](https://github.com/minhajul-abedin-ai/minhajul-abedin-ai/settings/pages) and select **GitHub Actions** as the build source. After the workflow deploys successfully, the website will be available at `https://minhajul-abedin-ai.github.io/minhajul-abedin-ai/`.
+
+The website exposes **public repositories only**; it does not request or display private projects.
 
 ## Start here: three projects to explore first
 
