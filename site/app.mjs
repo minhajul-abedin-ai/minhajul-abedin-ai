@@ -35,8 +35,11 @@ export function categoriseRepo(repo) {
 }
 
 export function normaliseRepo(repo) {
-  if (!repo || !safeRepoName(repo.name) || repo.name === PROFILE_REPO || repo.private === true) return null;
-  if (repo.owner && repo.owner.login && repo.owner.login.toLowerCase() !== OWNER.toLowerCase()) return null;
+  if (!repo || !safeRepoName(repo.name) || repo.name.toLowerCase() === PROFILE_REPO.toLowerCase()) return null;
+  // Only confirmed public repositories belonging to this owner are shown.
+  // Missing or contradictory visibility fields fail closed.
+  if (repo.private !== false || (repo.visibility && repo.visibility !== 'public')) return null;
+  if (repo.owner?.login?.toLowerCase() !== OWNER.toLowerCase()) return null;
   const known = KNOWN.get(repo.name.toLowerCase());
   const description = known?.description || (typeof repo.description === 'string' && repo.description.trim()) || 'Explore the source code, README and related development work on GitHub.';
   return {
@@ -137,9 +140,11 @@ async function initialise() {
   const nav = el('primaryNav');
   const toggle = el('menuToggle');
 
-  let repositories = PROJECT_CATALOG.map(normaliseRepo).filter(Boolean);
+  let repositories = PROJECT_CATALOG.map(p => normaliseRepo({ ...p, private: false, visibility: 'public', owner: { login: OWNER } })).filter(Boolean);
   let activeFilter = 'all';
-  let live = false;
+  // Fallback projects have no trustworthy live update or star metadata.
+  sort.querySelector('[value="updated"]').disabled = true;
+  sort.querySelector('[value="stars"]').disabled = true;
 
   const render = () => {
     const selected = filterAndSort(repositories, search.value, activeFilter, sort.value);
@@ -170,12 +175,26 @@ async function initialise() {
     toggle.setAttribute('aria-label', opened ? 'Close navigation' : 'Open navigation');
     nav.classList.toggle('is-open', opened);
   });
+  const closeMenu = (restoreFocus = false) => {
+    nav.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Open navigation');
+    if (restoreFocus) toggle.focus();
+  };
   nav.addEventListener('click', event => {
-    if (event.target.closest('a')) {
-      nav.classList.remove('is-open');
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.setAttribute('aria-label', 'Open navigation');
+    if (event.target.closest('a')) closeMenu();
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+      closeMenu(true);
     }
+  });
+  document.addEventListener('click', event => {
+    if (toggle.getAttribute('aria-expanded') === 'true' &&
+        !nav.contains(event.target) && !toggle.contains(event.target)) closeMenu();
+  });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 880 && toggle.getAttribute('aria-expanded') === 'true') closeMenu();
   });
   document.getElementById('currentYear').textContent = String(new Date().getFullYear());
 
@@ -187,7 +206,8 @@ async function initialise() {
     // The GitHub API returns public repositories. The profile README is not a project card.
     const unique = new Map(latest.map(r => [r.name.toLowerCase(), r]));
     repositories = [...unique.values()];
-    live = true;
+    sort.querySelector('[value="updated"]').disabled = false;
+    sort.querySelector('[value="stars"]').disabled = false;
     status.textContent = `Live GitHub directory · ${repositories.length} public project ${repositories.length === 1 ? 'repository' : 'repositories'} · search and filters ready`;
   } catch (error) {
     status.textContent = 'Live GitHub sync unavailable · showing a verified public-project collection · open GitHub for the latest list';
