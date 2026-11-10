@@ -22,6 +22,15 @@ My work connects machine learning with software engineering: from training and e
 
 > **My approach:** Build a working baseline → test it → investigate failures → improve it → document the evidence. I distinguish tested functionality from experimental features and work that still needs independent validation.
 
+## Interactive portfolio website — a guided tour of my GitHub
+
+I have built a separate **responsive portfolio website** for recruiters, developers and research collaborators. Visitors can follow my journey, see curated AI engineering case studies, and **search or filter every public project repository** from one place.
+
+- **[Explore the portfolio website](https://minhajul-abedin-ai.github.io/minhajul-abedin-ai/)** — this link becomes live once GitHub Pages is activated for this repository.
+- [View the website source](site/index.html) · [GitHub Pages setup instructions](PORTFOLIO_README.md)
+
+The website intentionally exposes **public repositories only**. Private repositories are not included.
+
 ## Start here: three projects to explore first
 
 | Project | What it shows | Where to start |
